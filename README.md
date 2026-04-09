@@ -1,5 +1,5 @@
 # AFHR-RAG
-一个基于 Agentic RAG(Decision-Centric Iterative Agentic RAG)的面向中老年用户群体的反诈、辟谣预防平台，本仓库所存储的是该项目的RAG部分实现
+一个基于 Agentic RAG(Decision-Centric Iterative Hybrid Agentic RAG)的面向中老年用户群体的反诈、辟谣预防平台，本仓库所存储的是该项目的RAG部分实现
 
 AFHR-RAG架构如下：
 ```
