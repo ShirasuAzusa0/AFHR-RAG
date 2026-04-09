@@ -61,6 +61,15 @@ class AgentService:
         self .min_selected_docs = min_selected_docs
         self.min_total_tokens = min_total_tokens
         self.max_decision_retries = max_decision_retries
+        try:
+            self.min_select_gain = int(os.getenv("MIN_SELECTED_GAIN", 1))
+        except ValueError:
+            self.min_select_gain = 1
+
+        try:
+            self.min_token_gain = int(os.getenv("MIN_TOKEN_GAIN", 100))
+        except ValueError:
+            self.min_token_gain = 100
 
     def run(self, query: str, kb_id: int) -> Dict[str, Any]:
         """
@@ -222,8 +231,7 @@ class AgentService:
 
         state.used_tokens += delta
 
-    @staticmethod
-    def _has_marginal_gain(state: AgentState) -> bool:
+    def _has_marginal_gain(self, state: AgentState) -> bool:
         """"
             判断当前迭代是否仍有明显收益
 
@@ -245,20 +253,10 @@ class AgentService:
         delta_tokens = curr.get("total_tokens", 0) - prev.get("total_tokens", 0)
 
         # 可调参数
-        try:
-            min_select_gain = int(os.getenv("MIN_SELECTED_GAIN", 1))
-        except ValueError:
-            min_select_gain = 1
-
-        try:
-            min_token_gain = int(os.getenv("MIN_TOKEN_GAIN", 100))
-        except ValueError:
-            min_token_gain = 100
-
-        if delta_selected >= min_select_gain:
+        if delta_selected >= self.min_select_gain:
             return True
 
-        if delta_tokens >= min_token_gain:
+        if delta_tokens >= self.min_token_gain:
             return True
 
         return False
