@@ -1,0 +1,11 @@
+### model ###
+/model/
+
+### article data ###
+/article_data/
+
+### env ###
+.env
+
+### zip ###
+*.zip
