@@ -5,6 +5,7 @@ from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, List, Optional
 from tools.rag_retrieval_tool import RAGRetrievalTool
+from tools.web_search_tool import WebSearchTool
 from models.agent_decisionrecord import DecisionRecord
 
 class AgentState:
@@ -35,8 +36,9 @@ class AgentService:
     def __init__(
             self,
             retrieval_tool: RAGRetrievalTool,
+            websearch_tool: WebSearchTool,
             api_key: str = os.getenv("LLM_API_KEY", ""),
-            llm_url=os.getenv("LLM_OPENAI_BASE_URL", ""),
+            llm_url: str =os.getenv("LLM_OPENAI_BASE_URL", ""),
             max_iterations: int = 3,
             min_selected_docs: int = 3,
             min_total_tokens: int = 800,
@@ -55,6 +57,7 @@ class AgentService:
                 max_decision_retries: 决策重试最大次数
         """
         self.retrieval_tool = retrieval_tool
+        self.websearch_tool = websearch_tool
         self.api_key = api_key
         self.llm_url = llm_url
         self.max_iterations = max_iterations
@@ -113,6 +116,55 @@ class AgentService:
             if decision == "expand_search":
                 state.top_k *= 2
                 continue
+
+        # Web fallback (Hybrid RAG)
+        if (
+                self.websearch_tool
+                and not self._is_sufficient(state)
+        ):
+            web_result = self.websearch_tool.run(
+                query=state.query,
+                top_k=5
+            )
+
+            web_docs = web_result.get("documents", [])[:5]
+            state.aggregated_documents.extend(web_docs)
+
+            # 如果 web 返回 metrics，让它参与状态管理
+            web_metrics = web_result.get("metrics", {})
+
+            if web_metrics:
+                state.metrics_history.append(web_metrics.copy())
+                state.final_metrics = web_metrics
+
+                # 更新 token 使用量
+                if len(state.metrics_history) >= 2:
+                    prev_total = state.metrics_history[-2].get("total_tokens", 0)
+                    curr_total = state.metrics_history[-1].get("total_tokens", 0)
+                    delta = max(curr_total - prev_total, 0)
+                else:
+                    delta = web_metrics.get("total_tokens", 0)
+
+                state.used_tokens += delta
+
+            # 标记 Web 增加数量
+            state.final_metrics["web_added"] = len(web_docs)
+
+            # 记录决策历史
+            decision_record = DecisionRecord(
+                timestamp=datetime.now().isoformat(),
+                iteration=state.iteration,
+                top_k=state.top_k,
+                doc_count=len(state.aggregated_documents),
+                selected_count=state.final_metrics.get("selected_count", 0),
+                total_tokens=state.final_metrics.get("total_tokens", 0),
+                action="web_fallback",
+                raw_response="",
+                reflection="triggered_due_to_insufficient_internal_results",
+                error=None
+            )
+
+            state.decision_history.append(decision_record)
 
         # 去重
         unique_docs = self._deduplicate(state.aggregated_documents)
@@ -222,9 +274,10 @@ class AgentService:
         state.final_metrics = metrics
         state.metrics_history.append(metrics.copy())
 
-        if len(state.metrics_history) >= 1:
-            prev_total = state.metrics_history[-1].get("total_tokens", 0)
-            curr_total = metrics.get("total_tokens", 0)
+        # 必须比较前后两轮的 delta
+        if len(state.metrics_history) >= 2:
+            prev_total = state.metrics_history[-2].get("total_tokens", 0)
+            curr_total = state.metrics_history[-1].get("total_tokens", 0)
             delta = max(curr_total - prev_total, 0)
         else:
             delta = metrics.get("total_tokens", 0)

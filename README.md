@@ -8,10 +8,12 @@ AFHR-RAG/
 ├── configs/                 ← 配置项
 ├── model/                   ← 本地部署的模型
 ├── models/                  ← models层，实现数据库表映射
+├── prompts/                 ← 提示词文件
 ├── repositories/            ← repositories层，对接数据库增删改查接口
 ├── script/                  ← 脚本文件
 ├── services/                ← services层，实现服务事务处理
-├── utils/                   ← 工具函数、模型载入、响应模板、爬虫等
+├── tools/                   ← 工具层
+├── utils/                   ← 辅助工具函数、模型载入、响应模板、爬虫等高复用代码模块
 ├── main.py                  ← 项目入口
 └── README.md                ← 项目说明
 ```
