@@ -9,3 +9,6 @@ model/
 
 ### pycache ###
 __pycache__/
+
+### static ###
+static/
