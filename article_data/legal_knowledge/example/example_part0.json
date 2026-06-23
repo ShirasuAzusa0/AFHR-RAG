@@ -1,0 +1,293 @@
+{
+    "total": 5,
+    "sum": 4785,
+    "data": [
+        {
+            "caseGrade": [
+                {
+                    "name": "优秀案例",
+                    "value": "star-6"
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2069cab65a1ccd567f579b9cb74a02938c0bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "湖南省高级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)湘刑终1号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.07.03",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2069cab65a1ccd567f579b9cb74a02938c0bdfb",
+            "title": "湖南某集团有限公司等集资诈骗、诈骗、虚开增值税专用发票、用于骗取出口退税、抵扣税款发票、非法吸收公众存款案"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "法宝推荐",
+                    "value": "star-9"
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "a6bdb3332ec0adc4869c060709e899f3e41b68c05020643bbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省高级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2019)粤刑终57号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2019.03.11",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [
+                {
+                    "value": "<span style=\"color:#999\">信用卡诈骗,新的司法解释,量刑标准</span>",
+                    "name": "Core",
+                    "text": "<span style=\"color:#218fc4;font-weight:bold\">关键词</span>"
+                },
+                {
+                    "value": "<span style=\"color:#999\">原审判决生效前新的司法解释作出修改更有利于行为人的，应适用新的司法解释予以调整</span>",
+                    "name": "DisputedIssues",
+                    "text": "<span style=\"color:#218fc4;font-weight:bold\">核心问题</span>"
+                }
+            ],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "a6bdb3332ec0adc4869c060709e899f3e41b68c05020643bbdfb",
+            "title": "廖志荣诈骗、贷款诈骗、信用卡诈骗案"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "优秀案例",
+                    "value": "star-6"
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "a25051f3312b07f3aae9aea90b44b4c67d4e636bc5d3d3c4bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "福建省泉州市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2016)闽05刑终1467号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2016.12.20",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "a25051f3312b07f3aae9aea90b44b4c67d4e636bc5d3d3c4bdfb",
+            "title": "杨春国信用卡诈骗案"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "法宝推荐",
+                    "value": "star-9"
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "a25051f3312b07f3c00b07c18c646b3ca6be51c0307172c9bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "河北省高级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2016)冀刑终320号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2016.06.29",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [
+                {
+                    "value": "<span style=\"color:#999\">骗取贷款,借新还旧,金融票证</span>",
+                    "name": "Core",
+                    "text": "<span style=\"color:#218fc4;font-weight:bold\">关键词</span>"
+                },
+                {
+                    "value": "<span style=\"color:#999\">行为人基于换取贷款目的，借用他人名义伪造相关手续并数次贷款未予归还造成重大损失的，构成骗取贷款罪</span>",
+                    "name": "DisputedIssues",
+                    "text": "<span style=\"color:#218fc4;font-weight:bold\">核心问题</span>"
+                }
+            ],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "a25051f3312b07f3c00b07c18c646b3ca6be51c0307172c9bdfb",
+            "title": "彭江、吴选生贷款诈骗、虚假出资、抽逃出资、违规出具金融票证、诈骗案"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "法宝推荐",
+                    "value": "star-9"
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "a6bdb3332ec0adc40de1826258c2908e990ce8275de50b30bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省中山市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2018)粤20刑终486号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2019.01.28",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "a6bdb3332ec0adc40de1826258c2908e990ce8275de50b30bdfb",
+            "title": "苏某贷款诈骗、骗取贷款、票据承兑、金融票证、违法发放贷款、诈骗、伪造、变造、买卖国家机关公文、证件、印章二审刑事裁定书"
+        }
+    ]
+}

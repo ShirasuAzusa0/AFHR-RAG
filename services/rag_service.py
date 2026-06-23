@@ -9,8 +9,12 @@ from services.chunking_service import document_auto_split
 
 
 class RAGService:
+    # 保存唯一实例
+    _instance = None
+
     def __init__(
             self,
+            llm_client,
             embedding_service,
             reranker_service,
             chroma_repo
@@ -19,15 +23,19 @@ class RAGService:
             初始化 RAG 服务
 
             Args:
+                llm_client: LLM 服务实例
                 embedding_service: 向量化服务实例
                 reranker_service: 重排序服务实例
                 chroma_repo: Chroma 仓库实例
         """
+        self.llm_client = llm_client
         self.embedding_service = embedding_service
         self.reranker_service = reranker_service
         self.chroma_repo = chroma_repo
 
         self.folder_to_collection = json.loads(os.getenv('CHROMA_COLLECTIONS', '{}')) if os.getenv('CHROMA_COLLECTIONS', '{}') else {}
+
+        RAGService._instance = self
 
     def query_search(self, query_text, kb_id, top_k=10):
         """
@@ -76,6 +84,31 @@ class RAGService:
             "metrics": metrics
         }
 
+    @classmethod
+    def assisted_query(cls, prompt: str, conversation: str) -> str:
+        if RAGService._instance is None:
+            raise RuntimeError('RAG service is not initialized')
+        # 艾斯比 pycharm 连类内调用 protected 也能给我警告上了（绷
+        # noinspection PyProtectedMember
+        return cls._instance._assisted_query(prompt, conversation)
+
+    def _assisted_query(self, prompt: str, conversation: str):
+        response = self.llm_client.chat.completions.create(
+            model=os.getenv('LLM_OPENAI_MODEL_NAME', 'MiniMax-Text-01'),
+            messages = [
+                {
+                    'role': 'system',
+                    'content': prompt
+                },
+                {
+                    'role': 'user',
+                    'content': conversation
+                }
+            ],
+            temperature = 0.2
+        )
+        return response.choices[0].message.content.strip()
+
     @staticmethod
     def _generate_document_id(file_path: str) -> int:
         """
@@ -92,7 +125,7 @@ class RAGService:
 
     def build_data_items_from_article_data(self) -> List[DataItem]:
         """
-            扫描 article_data 目录下三个知识库文件夹，
+            扫描 static/article_data 目录下三个知识库文件夹，
             调用 chunking_service 分段，构造 DataItem 列表
 
             三个知识库映射：
@@ -104,7 +137,7 @@ class RAGService:
                 data_items 列表，每个包含 kb_id、document_id、collection_name、context
         """
         base_path = os.path.abspath(
-            os.path.join(os.path.dirname(__file__), "..", "article_data")
+            os.path.join(os.path.dirname(__file__), "..", "static", "article_data")
         )
 
         all_items = []

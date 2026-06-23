@@ -1,0 +1,5291 @@
+{
+    "total": 4766,
+    "sum": 4766,
+    "data": [
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "c7ed112b8012f816e77e84f2f533fb46b0adf30a845fe740bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "江西省南昌市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2025)赣01刑更5445号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2025.12.30",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "c7ed112b8012f816e77e84f2f533fb46b0adf30a845fe740bdfb",
+            "title": "黄志虎;贷款诈骗罪;诈骗罪刑罚变更刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206d5c2f52e711dfdf03d4b934a3536196dbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "湖北省恩施土家族苗族自治州中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2025)鄂28刑终57号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2025.05.06",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206d5c2f52e711dfdf03d4b934a3536196dbdfb",
+            "title": "郑某甲、郑某华等贷款诈骗、诈骗二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f20669e5943ec93686b130ed9183c1e54636bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山东省龙口市人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)鲁0681刑初274号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2025.03.19",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f20669e5943ec93686b130ed9183c1e54636bdfb",
+            "title": "王某某信用卡诈骗、诈骗等一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2069a9306b8556d3eb03b867c6ac5af5f9cbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "河南省卢氏县人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2025)豫1224刑初1号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2025.02.20",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2069a9306b8556d3eb03b867c6ac5af5f9cbdfb",
+            "title": "姜某甲信用卡诈骗罪;诈骗罪一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206191ed608cabb0225f08063f4428015b2bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "简易程序刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山西省高平市人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2025)晋0581刑初8号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2025.01.16",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206191ed608cabb0225f08063f4428015b2bdfb",
+            "title": "李某1诈骗罪、信用卡诈骗罪、信用卡诈骗罪、信用卡诈骗罪刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "c7ed112b8012f8161cd74b80a9f97c75a372418f10be80b0bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "福建省高级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)闽刑终140号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2025.01.08",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "c7ed112b8012f8161cd74b80a9f97c75a372418f10be80b0bdfb",
+            "title": "张某1故意杀人罪、诈骗罪、保险诈骗罪刑事二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206fb95396454016dc20f152373e0366163bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "江西省上饶地区（市）中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)赣11刑更1151号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.12.27",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206fb95396454016dc20f152373e0366163bdfb",
+            "title": "胡某信用卡诈骗罪、诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2060adc04ff0f732518168949bd10c04521bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "简易程序刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "浙江省金华市金东区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)浙0703刑初653号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.12.10",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2060adc04ff0f732518168949bd10c04521bdfb",
+            "title": "付真刚;王小拧保险诈骗罪;诈骗罪一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "c7ed112b8012f81649e5295c195f3856e35349fa7c07838ebdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "简易程序刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "湖北省黄石市下陆区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)鄂0204刑初166号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.12.09",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "c7ed112b8012f81649e5295c195f3856e35349fa7c07838ebdfb",
+            "title": "陈某甲信用卡诈骗、诈骗一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206329fe402fbc9ea420eb4ddac96a9025ebdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山西省吕梁市离石区（市/县）人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)晋1102刑初319号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.12.03",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206329fe402fbc9ea420eb4ddac96a9025ebdfb",
+            "title": "刘某某诈骗罪、信用卡诈骗罪、信用卡诈骗罪、诈骗罪刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206e206e89dae9b1da49e7cbc3fce785645bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "陕西省西安市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)陕01刑终813号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.12.02",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206e206e89dae9b1da49e7cbc3fce785645bdfb",
+            "title": "刘会、刘会峰等诈骗、职务侵占等二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f20670bd30c807dd7dec8f25569813a5420bbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "再审刑事通知书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "云南省红河哈尼族彝族自治州中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)云25刑申55号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.11.05",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f20670bd30c807dd7dec8f25569813a5420bbdfb",
+            "title": "盗窃、信用卡诈骗等再审审查刑事驳回申诉通知书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206ed012e65078e70c0cbf4dca86b6ffe05bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "云南省昆明市西山区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)云0112刑初784号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.08.23",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206ed012e65078e70c0cbf4dca86b6ffe05bdfb",
+            "title": "龚某、杨某1等诈骗、保险诈骗一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206a522f2a11a89ac42cd208c9811074289bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "江苏省启东市人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)苏0681刑初401号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.08.14",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206a522f2a11a89ac42cd208c9811074289bdfb",
+            "title": "李某、李冒贷款诈骗罪、贷款诈骗罪、诈骗罪刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2068d70e7e63bd9ad7a84cc3a36505388ddbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事决定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "福建省福州市台江区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)闽0103刑初366号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.07.31",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2068d70e7e63bd9ad7a84cc3a36505388ddbdfb",
+            "title": "汪某某、鄢某某集资诈骗、诈骗一审刑事决定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2063acc5526708b872805d781584cf2359fbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "天津市南开区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)津0104刑初221号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.07.24",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2063acc5526708b872805d781584cf2359fbdfb",
+            "title": "任某龙、吴某崑等保险诈骗罪、诈骗罪等刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206a6be278a116f2b3ee2b7e65021abc7babdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "湖南省郴州市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)湘10刑终183号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.07.19",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206a6be278a116f2b3ee2b7e65021abc7babdfb",
+            "title": "黄某某信用卡诈骗、诈骗二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206c48f6eafb0063e102ad58ec70e3f8515bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事决定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "福建省福州市台江区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)闽0103刑初324号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.07.11",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206c48f6eafb0063e102ad58ec70e3f8515bdfb",
+            "title": "汪某某、鄢某某集资诈骗、诈骗一审刑事决定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206e012898ecad60cfa33215bb56dbab3e2bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事决定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "福建省福州市台江区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)闽0103刑初126号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.07.11",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206e012898ecad60cfa33215bb56dbab3e2bdfb",
+            "title": "汪某某、鄢某某集资诈骗、诈骗一审刑事决定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2061b8bea4bfa8d3e1c6b9943e41d51056fbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省韶关市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)粤02刑更1477号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.06.28",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2061b8bea4bfa8d3e1c6b9943e41d51056fbdfb",
+            "title": "卞某诈骗罪、信用卡诈骗罪、抢劫罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f20687dc5208a295394d05fc21d06457f856bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省韶关市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)粤02刑更1215号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.06.27",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f20687dc5208a295394d05fc21d06457f856bdfb",
+            "title": "陈某义盗窃罪、诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2063cf16d0a161ead0d25f8e3399bc80d65bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "云南省石屏县人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)云2525刑初37号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.05.24",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2063cf16d0a161ead0d25f8e3399bc80d65bdfb",
+            "title": "徐某香诈骗、集资诈骗一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206bd3ec32fd9591ad08cf8f2eb65bf2225bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "天津市南开区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)津0104刑初68号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.04.03",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206bd3ec32fd9591ad08cf8f2eb65bf2225bdfb",
+            "title": "付某刚、李某等保险诈骗罪、诈骗罪等刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206d989163ac17d91179720a3df2b037605bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "吉林省松原市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)吉07刑更6号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.03.29",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206d989163ac17d91179720a3df2b037605bdfb",
+            "title": "石某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "c7ed112b8012f8162c6df5ebe782de4cfe5f091ac169046ebdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "河北省邢台市襄都区人民法院（原河北省邢台市桥东区人民法院）",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)冀0502刑初60号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.03.29",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "c7ed112b8012f8162c6df5ebe782de4cfe5f091ac169046ebdfb",
+            "title": "李某革诈骗罪、信用卡诈骗罪等刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f20679d1d371c2b1665625876420e516ceecbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "陕西省铜川市王益区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)陕0202刑初14号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.03.22",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f20679d1d371c2b1665625876420e516ceecbdfb",
+            "title": "颜某某信用卡诈骗、诈骗一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f20612a9b55c8a598d5b389cef7d207d8c9abdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "再审刑事通知书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "天津市高级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)津刑申5号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.02.28",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f20612a9b55c8a598d5b389cef7d207d8c9abdfb",
+            "title": "赵某保险诈骗罪、诈骗罪刑事申诉再审审查刑事通知书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2060515b63353d79e240ec1dc5a1f35291ebdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "云南省保山地区中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)云05刑终156号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.02.26",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2060515b63353d79e240ec1dc5a1f35291ebdfb",
+            "title": "伏某琼、李某民甲诈骗、信用卡诈骗二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2067642ba2aac363b9e49990d3fc4cbee81bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "简易程序刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广西壮族自治区柳州市鱼峰区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)桂0203刑初33号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.02.05",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2067642ba2aac363b9e49990d3fc4cbee81bdfb",
+            "title": "成某认、谭某旺等诈骗、信用卡诈骗一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2066fca81ad2e8f1018b617b0ca0b9eef52bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山西省吕梁市离石区（市/县）人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2024)晋1102刑初1号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.01.30",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2066fca81ad2e8f1018b617b0ca0b9eef52bdfb",
+            "title": "任某某诈骗罪、信用卡诈骗罪、诈骗罪、信用卡诈骗罪刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2063f470b663d54cb86f6e02953919c5927bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山东省泰安市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)鲁09刑终209号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.01.24",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2063f470b663d54cb86f6e02953919c5927bdfb",
+            "title": "张某莉诈骗、贷款诈骗二审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "c7ed112b8012f8165ed57498ba1cd353a612efeebb450d68bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "江西省赣州市章贡区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)赣0702刑初741号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2024.01.05",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "c7ed112b8012f8165ed57498ba1cd353a612efeebb450d68bdfb",
+            "title": "陈某诈骗、信用卡诈骗一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2064f6f929dad17916c556fbc001946c217bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "江西省抚州地区（市）中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)赣10刑终159号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.12.29",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2064f6f929dad17916c556fbc001946c217bdfb",
+            "title": "熊某海集资诈骗、诈骗二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f20613bd172b91dec8402ef35da12581c149bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "贵州省贵阳市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023黔01刑终229号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.12.21",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f20613bd172b91dec8402ef35da12581c149bdfb",
+            "title": "郝某某集资诈骗、诈骗二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "c7ed112b8012f8166ddd1991583c16f768adfa1edb2876a2bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省韶关市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)粤02刑更4206号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.12.21",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "c7ed112b8012f8166ddd1991583c16f768adfa1edb2876a2bdfb",
+            "title": "胡某才信用卡诈骗罪、诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206008029a7fd7b9697cc11ef3c8c9a328fbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省韶关市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)粤02刑更4041号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.12.19",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206008029a7fd7b9697cc11ef3c8c9a328fbdfb",
+            "title": "王某波信用卡诈骗罪、诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206dc7c20af047901e4a3c110d4fa53816abdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省韶关市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)粤02刑更4092号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.12.19",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206dc7c20af047901e4a3c110d4fa53816abdfb",
+            "title": "何某洋信用卡诈骗罪、诈骗罪、抢劫罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206e4e3bc2d412ba069eaf8c03b337b387bbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省韶关市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)粤02刑终218号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.12.05",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206e4e3bc2d412ba069eaf8c03b337b387bbdfb",
+            "title": "谷华、刘慧民等贷款诈骗罪、诈骗罪等刑事二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206b4a56762c7653293c64fdb3686f91b1bbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "再审刑事通知书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "内蒙古自治区高级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)内刑申514号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.11.16",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206b4a56762c7653293c64fdb3686f91b1bbdfb",
+            "title": "于某莲等诈骗、贷款诈骗案"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206033b510c88c2f4b7924fb9ccaca0015dbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山东省庆云县人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)鲁1423刑初371号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.10.09",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206033b510c88c2f4b7924fb9ccaca0015dbdfb",
+            "title": "韩某诈骗、信用卡诈骗一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2063b7bc9af8898caacd476650ea515ade8bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "云南省昆明市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)云01刑终501号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.09.24",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2063b7bc9af8898caacd476650ea515ade8bdfb",
+            "title": "段某康诈骗、信用卡诈骗二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2069bb36c654e402dbfd35645f289e41aecbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事决定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山西省高级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)晋刑他180号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.08.11",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2069bb36c654e402dbfd35645f289e41aecbdfb",
+            "title": "闫某某、张某某等诈骗罪、贷款诈骗罪、职务侵占罪、职务侵占罪、骗取贷款、票据承兑、金融票证罪其他刑事刑事决定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206623b8d8c92a9df06e2a805269f09cf35bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "贵州省毕节地区中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)黔05刑终208号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.07.25",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206623b8d8c92a9df06e2a805269f09cf35bdfb",
+            "title": "代某甲诈骗、贷款诈骗二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206a1036cdcd7edfb92c3f883575596e6c0bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "陕西省商洛市（地区）中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)陕10刑更85号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.07.04",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206a1036cdcd7edfb92c3f883575596e6c0bdfb",
+            "title": "刘某诈骗罪、贷款诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2064651c8dcd83ebd7831c9d31c4a4cc21dbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "吉林省通化市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)吉05刑更194号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.05.29",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2064651c8dcd83ebd7831c9d31c4a4cc21dbdfb",
+            "title": "刘某某信用卡诈骗罪、诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f20639c9c363629accd5a4792aaea55492b9bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "吉林省长春市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)吉01刑更1412号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.05.26",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f20639c9c363629accd5a4792aaea55492b9bdfb",
+            "title": "叶某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206ad9ad1324ad1df8e8a242e8b59521e42bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "吉林省长春市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)吉01刑终44号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.04.18",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206ad9ad1324ad1df8e8a242e8b59521e42bdfb",
+            "title": "崔巍、李延江保险诈骗罪、诈骗罪刑事二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2065fb2cb977baa147bf5126dbb315ef63fbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "辽宁省东港市人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)辽0681刑初45号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.03.27",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2065fb2cb977baa147bf5126dbb315ef63fbdfb",
+            "title": "连英煜诈骗罪、伪造、变造、买卖国家机关公文、证件、印章罪、贷款诈骗罪、诈骗罪、伪造、变造、买卖国家机关公文、证件、印章罪、贷款诈骗罪刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2060dfce3231293dc4a5cbffdffe2d92a46bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "再审刑事通知书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "福建省高级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)闽刑申93号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.03.27",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2060dfce3231293dc4a5cbffdffe2d92a46bdfb",
+            "title": "钟某芳诈骗、信用卡诈骗案"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206558acc55ddbcf282714d04a6841dbcc8bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省揭阳市榕城区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)粤5202刑初164号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.03.21",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206558acc55ddbcf282714d04a6841dbcc8bdfb",
+            "title": "杨某佳信用卡诈骗罪、诈骗罪等刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206f15c5f605de5448deb2b659b0c9d08e0bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省阳江市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)粤17刑更31号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.03.20",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206f15c5f605de5448deb2b659b0c9d08e0bdfb",
+            "title": "蒋某信用卡诈骗罪、诈骗罪、偷越国(边)境罪、危险驾驶罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2068d7d686bd76138ff1cc34ca5543f66afbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省中山市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)粤20刑终99号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.03.09",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2068d7d686bd76138ff1cc34ca5543f66afbdfb",
+            "title": "曾某、周某等诈骗罪、信用卡诈骗罪刑事二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206a8c14b6514dd1622e3214e117dec14d1bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "辽宁省铁岭市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)辽12刑更18号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.02.17",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206a8c14b6514dd1622e3214e117dec14d1bdfb",
+            "title": "马某保险诈骗罪、诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f20653dd223d1fab2edab4ea674a2652e9e7bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "黑龙江省鸡西市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2023)黑03刑更28号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2023.01.12",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f20653dd223d1fab2edab4ea674a2652e9e7bdfb",
+            "title": "曹某信用卡诈骗罪、诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f20609ba914a7e054df76b77ec2daf116270bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "辽宁省铁岭市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)辽12刑更101号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.12.26",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f20609ba914a7e054df76b77ec2daf116270bdfb",
+            "title": "温某诈骗、合同诈骗、信用卡诈骗刑罚与执行变更刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "c7ed112b8012f816690bd946b260757a58d5c78d3f424a92bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山西省临汾市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)晋10刑终357号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.12.23",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "c7ed112b8012f816690bd946b260757a58d5c78d3f424a92bdfb",
+            "title": "刘某某诈骗罪、信用卡诈骗罪刑事二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f20616d760f7e33f621c41a85e103ba2b49cbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省韶关市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)粤02刑更4512号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.12.23",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f20616d760f7e33f621c41a85e103ba2b49cbdfb",
+            "title": "赖某信用卡诈骗罪、诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f20625b72e88c1757e485187e07b3f31de19bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山东省莱阳市人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)鲁0682刑初401号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.12.12",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f20625b72e88c1757e485187e07b3f31de19bdfb",
+            "title": "代文娟集资诈骗罪、诈骗罪等刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206b0c65b00deddaf8a7e6c2b32ea0fc51cbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省江门市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)粤07刑终210号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.09.15",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206b0c65b00deddaf8a7e6c2b32ea0fc51cbdfb",
+            "title": "李某信用卡诈骗罪、诈骗罪等刑事二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206855bcb2de375789a3004ec7abd503e7ebdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "上海市闵行区人民法院（原上海市上海县人民法院）",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)沪0112刑初311号之一",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.09.01",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206855bcb2de375789a3004ec7abd503e7ebdfb",
+            "title": "成志刚等集资诈骗罪、诈骗罪一审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206e25e7426f4a24afe0e2a5c4114d38f22bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省广州市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)粤01刑终556号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.08.30",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206e25e7426f4a24afe0e2a5c4114d38f22bdfb",
+            "title": "李某甲集资诈骗、诈骗刑事二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce151a6ef3039810f99d552646ba1691136bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "简易程序刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山东省济宁高新技术产业开发区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)鲁0891刑初160号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.08.11",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce151a6ef3039810f99d552646ba1691136bdfb",
+            "title": "仲ＸＸ诈骗罪、信用卡诈骗罪刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2063c3cec904bcf523c7c60116e952c9459bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "吉林省延边朝鲜族自治州中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)吉24刑更236号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.07.29",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2063c3cec904bcf523c7c60116e952c9459bdfb",
+            "title": "苏某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1fa321b65dd505ee86a061eb99d8ed97fbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "吉林省长春市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)吉01刑更923号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.07.27",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1fa321b65dd505ee86a061eb99d8ed97fbdfb",
+            "title": "修振宇诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1d29e0f06d9c0d449b89f204555c1a538bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "吉林省长春市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)吉01刑更928号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.07.27",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1d29e0f06d9c0d449b89f204555c1a538bdfb",
+            "title": "姜某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce138cab0fe2838e0248662bd4471994fa9bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "再审刑事通知书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "陕西省榆林市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)陕08刑申43号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.06.27",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce138cab0fe2838e0248662bd4471994fa9bdfb",
+            "title": "崔建功诈骗罪、信用卡诈骗罪、诈骗罪刑事申诉再审审查刑事通知书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce16f0da9761893db6491b5a81f35fae937bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山东省昌邑市人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)鲁0786刑初34号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.05.27",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce16f0da9761893db6491b5a81f35fae937bdfb",
+            "title": "郭海峰、昌检刑诈骗罪、信用卡诈骗罪等刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1d8a48ae2d9651746dd68d5f8d064bc58bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "辽宁省鞍山市铁西区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)辽0303刑初387号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.05.26",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1d8a48ae2d9651746dd68d5f8d064bc58bdfb",
+            "title": "佟柏秋诈骗、信用卡诈骗、盗窃刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce14d1ba4a5f78bd204145dd0ed8c434dd4bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省阳江市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)粤17刑更652号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.05.25",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce14d1ba4a5f78bd204145dd0ed8c434dd4bdfb",
+            "title": "莫某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2065db0319df09602afbf0eb41b508ed3f1bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广西壮族自治区桂林市秀峰区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)桂0302刑初196号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.05.25",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2065db0319df09602afbf0eb41b508ed3f1bdfb",
+            "title": "邓勇玉诈骗罪、信用卡诈骗罪刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce10b7224761819c73faf2e7a949b63a8febdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "河南省兰考县人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)豫0225刑初916号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.05.23",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce10b7224761819c73faf2e7a949b63a8febdfb",
+            "title": "袁某保险诈骗罪、诈骗罪刑事一审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206141ef144d58b56169989a07b64e9ccc5bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广西壮族自治区武鸣县人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)桂0122刑初221号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.05.07",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206141ef144d58b56169989a07b64e9ccc5bdfb",
+            "title": "卢玉旗诈骗罪、贷款诈骗罪刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2060e53ac6d2abe7e10b8513cc81a05f010bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "浙江省丽水市莲都区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)浙1102刑初63号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.05.07",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2060e53ac6d2abe7e10b8513cc81a05f010bdfb",
+            "title": "叶挺、王晟卿保险诈骗罪；诈骗罪一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1fba1672f351856043b7e477a087253b7bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省揭阳市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)粤52刑更435号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.04.28",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1fba1672f351856043b7e477a087253b7bdfb",
+            "title": "钟某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1674150d2f66dd4d9d45e1e35b76ccc5cbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "再审刑事通知书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "湖北省宜昌市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)鄂05刑申18号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.04.08",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1674150d2f66dd4d9d45e1e35b76ccc5cbdfb",
+            "title": "李登科、任丽黎贷款诈骗罪、诈骗罪等刑事申诉再审审查刑事通知书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce13907ca21117f0d7d252f7962e3535e08bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省河源市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)粤16刑更313号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.04.07",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce13907ca21117f0d7d252f7962e3535e08bdfb",
+            "title": "林某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2063a1443819f2ff62ab570128f04023061bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "辽宁省本溪市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)辽05刑终31号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.04.02",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2063a1443819f2ff62ab570128f04023061bdfb",
+            "title": "徐胜林、王润珂等组织、领导、参加黑社会性质组织、故意伤害、开设赌场、赌博、串通投标、容留他人吸毒、非法侵入住宅、非法拘禁、故意毁坏财物、诈骗、保险诈骗、窝藏、包庇刑事二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce150d31f815b396c9caa9438003df31420bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山东省青岛市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)鲁02刑终17号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.03.21",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce150d31f815b396c9caa9438003df31420bdfb",
+            "title": "王新宁、张振富保险诈骗罪、诈骗罪刑事二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206b391b39968fc92b435122791147db2f9bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "上海市闵行区人民法院（原上海市上海县人民法院）",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)沪0112刑初311号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.03.16",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206b391b39968fc92b435122791147db2f9bdfb",
+            "title": "成志刚等集资诈骗罪、诈骗罪一审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1c6ec47d1ccf91f67c4935fec2ca65a48bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "再审刑事决定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省高级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)粤刑抗6号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.03.15",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1c6ec47d1ccf91f67c4935fec2ca65a48bdfb",
+            "title": "华某职务侵占、诈骗、信用卡诈骗案"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2065c85a0f1901cab999ccc96f9ac6df7b2bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山东省青岛市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)鲁02刑更307号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.02.28",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2065c85a0f1901cab999ccc96f9ac6df7b2bdfb",
+            "title": "张某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1ebb971bc1922d887236778a3a4259bc6bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "简易程序刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "浙江省嵊州市人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)浙0683刑初557号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.02.17",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1ebb971bc1922d887236778a3a4259bc6bdfb",
+            "title": "金城、丁丰保险诈骗罪、故意毁坏财物罪一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f206180b2995f8cb85bc40527e059789451cbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山东省滨州市滨城区人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)鲁1602刑初616号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.02.15",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f206180b2995f8cb85bc40527e059789451cbdfb",
+            "title": "张晓旭诈骗罪、信用卡诈骗罪刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1b32b9dc057884b45fd709c82d75ad7c9bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "河南省商丘市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)豫14刑终910号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.02.11",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1b32b9dc057884b45fd709c82d75ad7c9bdfb",
+            "title": "刘某集资诈骗罪、诈骗罪刑事二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce169aa2491c9367ad9d9d07a1ade108cfabdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省河源市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)粤16刑更133号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.01.18",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce169aa2491c9367ad9d9d07a1ade108cfabdfb",
+            "title": "李某诈骗罪、贷款诈骗罪等刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce11306b5798f102525b15d637554e7b22fbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省河源市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2022)粤16刑更224号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.01.18",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce11306b5798f102525b15d637554e7b22fbdfb",
+            "title": "易某诈骗罪、贷款诈骗罪等刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce16f4409e5dedfc89343e1485600fcb050bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "再审刑事通知书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省高级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)粤刑申335号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2022.01.07",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce16f4409e5dedfc89343e1485600fcb050bdfb",
+            "title": "余某、祝亚彩诈骗罪、保险诈骗罪刑事申诉再审审查刑事通知书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1bf897683192422a70b7c0bf965662a47bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省阳江市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)粤17刑更2615号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.12.30",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1bf897683192422a70b7c0bf965662a47bdfb",
+            "title": "余某信用卡诈骗罪、诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1a0c7ec22aa4c78a124a0d08f40f6e27bbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "吉林省长春市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)吉01刑更2906号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.12.28",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1a0c7ec22aa4c78a124a0d08f40f6e27bbdfb",
+            "title": "叶某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1e6e712e1f7980fa2f0ce2748866143dcbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "云南省楚雄彝族自治州中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)云23刑更761号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.12.27",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1e6e712e1f7980fa2f0ce2748866143dcbdfb",
+            "title": "殷某合同诈骗罪、诈骗罪、虚开增值税专用发票、用于骗取出口退税、抵扣税款发票罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "08df102e7c10f2065cc2a1465477b3cbdbe2b8e204118c2abdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "江西省高级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)赣刑终128号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.12.22",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "08df102e7c10f2065cc2a1465477b3cbdbe2b8e204118c2abdfb",
+            "title": "宗某华集资诈骗罪、诈骗罪刑事二审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce104bfcc7355a1fd69732618fe6c609d6fbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省韶关市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)粤02刑更4614号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.12.20",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce104bfcc7355a1fd69732618fe6c609d6fbdfb",
+            "title": "周某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce18fa5779969561ad62c2ccea2ecdfdcdfbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "黑龙江省鸡西市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)黑03刑更429号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.12.20",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce18fa5779969561ad62c2ccea2ecdfdcdfbdfb",
+            "title": "刘某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1eec630c07a1edb216d708a9fb4c9df6dbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事其他文书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "广东省韶关市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)粤02刑更3899号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.12.20",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1eec630c07a1edb216d708a9fb4c9df6dbdfb",
+            "title": "何明洋信用卡诈骗罪、诈骗罪、抢劫罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce11ea0e463fea290c00efa1f9e41076a08bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "一审刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "天津市静海县人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)津0118刑初775号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.12.08",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce11ea0e463fea290c00efa1f9e41076a08bdfb",
+            "title": "徐向伟、李小娇信用卡诈骗罪、诈骗罪、诈骗罪刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce124a007bc32088f166356aa741917a50abdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "山东省淄博市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)鲁03刑终165号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.12.06",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce124a007bc32088f166356aa741917a50abdfb",
+            "title": "杨某4集资诈骗罪、诈骗罪刑事二审刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1af35ff7811a321a1dd4ca1680e26023fbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "简易程序刑事判决书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "黑龙江省北安市人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)黑1181刑初129号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.12.03",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1af35ff7811a321a1dd4ca1680e26023fbdfb",
+            "title": "陈玉和贷款诈骗罪、合同诈骗罪、诈骗罪、骗取贷款、票据承兑、金融票证罪刑事一审刑事判决书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce19e9c14486efd934d6182309ab1d5a9b4bdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "吉林省长春市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)吉01刑更2496号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.11.29",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce19e9c14486efd934d6182309ab1d5a9b4bdfb",
+            "title": "聂某诈骗罪、信用卡诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce11356864e9161cbe5c476767b18dbd81cbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "其他刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "吉林省长春市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)吉01刑更2503号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.11.29",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce11356864e9161cbe5c476767b18dbd81cbdfb",
+            "title": "金某信用卡诈骗罪、诈骗罪刑罚与执行变更审查刑事裁定书"
+        },
+        {
+            "caseGrade": [
+                {
+                    "name": "普通案例",
+                    "value": ""
+                }
+            ],
+            "isHaveEng": false,
+            "engLibrary": "en_case",
+            "engGid": "95b2ca8d4055fce1d81fe788f43cb03a9791f730cdec9e4cbdfb",
+            "summaries": [
+                {
+                    "type": "text",
+                    "text": "二审刑事裁定书",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "河北省邯郸市中级人民法院",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "(2021)冀04刑终854号",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                },
+                {
+                    "type": "text",
+                    "text": "2021.11.29",
+                    "textLink": null,
+                    "icon": null,
+                    "iconLink": null
+                }
+            ],
+            "tips": [
+                {
+                    "text": "裁判依据",
+                    "value": "pfnl"
+                }
+            ],
+            "sections": [],
+            "displayStyle": "text",
+            "fHighlightSections": [],
+            "highlightSections": [],
+            "gid": "95b2ca8d4055fce1d81fe788f43cb03a9791f730cdec9e4cbdfb",
+            "title": "张某某贷款诈骗罪、诈骗罪等刑事二审刑事裁定书"
+        }
+    ]
+}

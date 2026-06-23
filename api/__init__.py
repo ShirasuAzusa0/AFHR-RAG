@@ -1,4 +1,6 @@
+import os
 from flask import Flask
+from openai import OpenAI
 from flask_cors import CORS
 import logging
 
@@ -7,7 +9,7 @@ from services.rag_service import RAGService
 from services.embed_service import EmbeddingService
 from services.rerank_service import RerankerService
 from utils.model_loader import get_embedding_model, get_reranker_model
-from rag_routes import create_rag_routes
+from api.rag_routes import create_rag_routes
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -38,8 +40,15 @@ def create_app():
     # 加载 reranker 模型
     reranker_tokenizer, reranker_model, token_true_id, token_false_id, prefix_tokens, suffix_tokens, max_length = get_reranker_model()
 
+    # MiniMax 客户端初始化
+    llm_client = OpenAI(
+        api_key=os.getenv("LLM_API_KEY"),
+        base_url=os.getenv("LLM_OPENAI_BASE_URL")
+    )
+
     # 创建 Service
     rag_service = RAGService(
+        llm_client=llm_client,
         embedding_service=EmbeddingService(
             embedding_tokenizer,
             embedding_model,

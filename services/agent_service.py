@@ -1,591 +1,398 @@
-import os
-import requests
 import json
-from pathlib import Path
-from datetime import datetime
-from typing import Dict, Any, List, Optional
-from tools.rag_retrieval_tool import RAGRetrievalTool
-from tools.web_search_tool import WebSearchTool
-from models.agent_decisionrecord import DecisionRecord
+import logging
+import operator
+from typing import Dict, Any, List, TypedDict, Annotated
+from models.message_model import MMDataItem
+from graph.main_graph import build_main_graph
+from services.rag_service import RAGService
+from tools.web_searcher import call_agent_search
+from utils.kb_name2id import kb_name2id
+from utils.prompt_loader import load_prompt
+from langgraph.types import Send
 
-class AgentState:
-    """Agent 状态管理类，维护检索过程中的动态状态"""
-    def __init__(self, query: str, kb_id: int, initial_top_k: int):
-        self.query = query
-        self.kb_id = kb_id
-        self.iteration = 0
-        self.top_k = initial_top_k
-        self.aggregated_documents: List[Dict] = []
-        self.final_metrics: Dict[str, Any] = {}
-        self.metrics_history: List[Dict[str, Any]] = []
-        self.decision_history: List[DecisionRecord] = []
-        self.strategy: Dict[str, Any] = {}
-        self.used_tokens: int = 0
-        self.budget: int = 0
+logger = logging.getLogger(__name__)
+
+class AgentState(TypedDict):
+    query: str                                      # 用户原始提问输入
+    conversation_history: str                       # 总结后的历史消息
+    rewritten_questions: list[str]                  # 对 query 重写后的子问题
+    clarification_needed: str                       # 对用户下一步要求
+    sub_results: Annotated[list, operator.add]
+
+class SubGraphState(TypedDict):
+    subquestion: str
+    conversation_history: str
+    iteration: int
+    rag_result: dict
+    references: list
 
 class AgentService:
-    """
-        Agent 服务类，实现基于策略的智能检索决策
-
-        功能：
-            1. 根据查询复杂度动态调整检索策略
-            2. 迭代检索并决策是否继续扩展搜索
-            3. 管理 token 预算，避免超限
-            4. 记录完整决策历史用于分析
-    """
-    def __init__(
-            self,
-            retrieval_tool: RAGRetrievalTool,
-            websearch_tool: WebSearchTool,
-            api_key: str = os.getenv("LLM_API_KEY", ""),
-            llm_url: str =os.getenv("LLM_OPENAI_BASE_URL", ""),
-            max_iterations: int = 3,
-            min_selected_docs: int = 3,
-            min_total_tokens: int = 800,
-            max_decision_retries: int = 1
-    ):
+    @staticmethod
+    def _summarize_history(raw_history: List[MMDataItem]) -> Dict[str, Any]:
         """
-            初始化 Agent 服务
-
-            Args:
-                retrieval_tool: RAG 检索工具实例
-                api_key: LLM API 密钥
-                llm_url: LLM API 地址
-                max_iterations: 最大迭代次数（会被策略覆盖）
-                min_selected_docs: 最少筛选文档数（会被策略覆盖）
-                min_total_tokens: 最少 token 数（会被策略覆盖）
-                max_decision_retries: 决策重试最大次数
+            对用户历史对话进行总结，生成 conversation_history
+            :param raw_history: 用户模型聊天历史记录
+            :return: 经 LLM 总结过的 conversation_history
         """
-        self.retrieval_tool = retrieval_tool
-        self.websearch_tool = websearch_tool
-        self.api_key = api_key
-        self.llm_url = llm_url
-        self.max_iterations = max_iterations
-        self .min_selected_docs = min_selected_docs
-        self.min_total_tokens = min_total_tokens
-        self.max_decision_retries = max_decision_retries
-        try:
-            self.min_select_gain = int(os.getenv("MIN_SELECTED_GAIN", 1))
-        except ValueError:
-            self.min_select_gain = 1
+        # 对话轮数过少时，不需要进行总结
+        if len(raw_history) < 3:
+            return {"conversation_history": ""}
 
-        try:
-            self.min_token_gain = int(os.getenv("MIN_TOKEN_GAIN", 100))
-        except ValueError:
-            self.min_token_gain = 100
+        # 过滤有效信息（仅保留user、system 和 assistant）
+        relevant_msgs = [
+            msg for msg in raw_history
+            if msg.role.lower() in ["user", "assistant"]
+        ]
 
-    def run(self, query: str, kb_id: int) -> Dict[str, Any]:
+        # 若没有有效消息，也无需总结
+        if not relevant_msgs:
+            return {"conversation_history": ""}
+
+        # 只取最近 6 条消息草拟与总结
+        relevant_msgs = relevant_msgs[-6:]
+
+        # 构造对话文本
+        conversation = "Conversation history:\n"
+        for msg in relevant_msgs:
+            role = "User" if msg.role.lower() == "User" else "Assistant"
+            conversation += f"{role}: {msg.text}\n"
+
+        # 载入 prompt
+        prompt_content = load_prompt('llm_summary_prompt.txt')
+
+        # 调用 LLM 进行总结
+        summary_response = RAGService.assisted_query(prompt_content, conversation)
+        if summary_response is not None:
+            return {"conversation_history": summary_response}
+        else:
+            return {"conversation_history": ""}
+
+
+    @staticmethod
+    def rewrite_query(query: str, conversation_history: str = "") -> dict:
+        """
+            重写用户问题：
+            1. 改写为检索友好的形式
+            2. 必要时拆分为多个子问题
+            3. 如果问题不清晰，则要求用户补充
+            :param query: 用户问题
+            :param conversation_history: LLM 对话记录（已总结）
+            :return: 问题重写结果（字典类型）
+        """
+        # 构建输入内容
+        context_section = (
+            f"Conversation Context:\n{conversation_history}\n"
+            if conversation_history and conversation_history.strip()
+            else ""
+        ) + f"User Query:\n{query}\n"
+
+        # 载入 prompt
+        prompt_content = load_prompt('rewrite_query_prompt.txt')
+
+        # 调用 LLM
+        response_text = RAGService.assisted_query(prompt_content, context_section)
+
+        # 解析 JSON
+        try:
+            result = json.loads(response_text)
+        except Exception:
+            return {
+                "function_type": "rewrite_query",
+                "is_clear": False,
+                "original_data": query,
+                "current_data": [],
+                "clarification_needed": "I need more information to understand your question."
+            }
+
+        # 提取字段
+        is_clear = result.get("is_clear", False)
+        questions = result.get("questions", [])
+        clarification_needed = result.get("clarification_needed", "")
+
+        # 若问题清晰
+        if is_clear and questions:
+            return {
+                "function_type": "rewrite_query",
+                "is_clear": True,
+                "original_data": query,
+                "rewritten_data": questions,
+                "clarification_needed": ""
+            }
+
+        # 若问题不清晰
+        if not clarification_needed or len(clarification_needed.strip()) < 10:
+            clarification_needed = "I need more information to understand your question."
+
+        return {
+            "function_type": "rewrite_query",
+            "is_clear": False,
+            "original_data": query,
+            "rewritten_data": [],
+            "clarification_needed": clarification_needed
+        }
+
+
+    @staticmethod
+    def _route_after_query_rewrite(state: dict):
+        """
+            判断问题是否清晰：
+            - True  -> 进入并行子图
+            - False -> 请求用户补充信息
+        """
+        if state.get("question_is_clear"):
+            return "sub_graphs"
+        return "clarify"
+
+    @staticmethod
+    def _route_to_sub_graphs(state: dict):
+        """
+            为 rewritten_questions 中的每个子问题创建一个并行任务。
+        """
+        return [
+            Send(
+                "agent_subgraph",
+                {
+                    "subquestion": question,
+                    "original_query": state.get("original_query", ""),
+                    "conversation_history": state.get("conversation_history", "")
+                }
+            )
+            for question in state.get("rewritten_questions", [])
+        ]
+
+    @staticmethod
+    def classify_kb(rewritten_query: str):
+        """
+            基于每个 rewrite_query 匹配合适的知识库（循环外置在 run 中）
+        """
+        if rewritten_query is not None:
+            # 载入 prompt
+            prompt_content = load_prompt('classify_kb_prompt.txt')
+
+            # 调用 LLM
+            response_text = RAGService.assisted_query(prompt_content, rewritten_query)
+
+            try:
+                result = json.loads(response_text)
+            except Exception:
+                return {
+                    "function_type": "classify_kb",
+                    "is_clear": False,
+                    "original_data":rewritten_query,
+                    "current_data": None,
+                    "clarification_needed": ""
+                }
+
+            kb_name = result.get("kb_collection", "")
+            if kb_name:
+                kb_id = kb_name2id(kb_name)
+                if kb_id > 0:
+                    return {
+                        "function_type": "classify_kb",
+                        "is_clear": True,
+                        "original_data":rewritten_query,
+                        "current_data": kb_id,
+                        "clarification_needed": ""
+                    }
+
+            return {
+                "function_type": "classify_kb",
+                "is_clear": False,
+                "original_data":rewritten_query,
+                "current_data": None,
+                "clarification_needed": "I need more information to classify your knowledge base."
+            }
+
+        return {
+            "function_type": "classify_kb",
+            "is_clear": False,
+            "original_data":rewritten_query,
+            "current_data": None,
+            "clarification_needed": "I can't rewritten any query text"
+        }
+
+    @staticmethod
+    def rag_search(query_text, kb_id, top_k=10):
+        """
+            向量库检索
+        """
+        return RAGService.query_search(query_text, kb_id, top_k)
+
+    @staticmethod
+    def web_search(query_text, history):
+        """
+            联网搜索
+        """
+        return call_agent_search(query_text, history)
+
+    @staticmethod
+    def evaluate_retrieval(query: str, search_result: dict, conversation_history: str):
+        """
+            评估当前 RAG 检索结果是否足够回答用户问题
+
+            decision:
+                - sufficient   -> 知识库内容足够回答
+                - insufficient -> 有一定相关性，但信息不足，需要联网
+                - irrelevant   -> 检索内容无关，需要用户补充问题
+        """
+        # 提取 documents
+        documents = search_result.get("documents", [])
+
+        # 检索结果为空
+        if not documents:
+            return {
+                "function_type": "evaluate_retrieval",
+                "decision": "insufficient",
+                "original_data": query,
+                "current_data": [],
+                "clarification_needed": "documents not found"
+            }
+
+        # 保存 references
+        references = []
+
+        # 构建 RAG Context
+        rag_context = "以下是与用户问题相关的参考资料：\n\n"
+        for idx, doc in enumerate(documents, start=1):
+            """
+                doc 结构：
+                (
+                    content,
+                    metadata,
+                    distance,
+                    rerank_score
+                )
+            """
+            # 安全处理
+            if not isinstance(doc, (list, tuple)):
+                continue
+            if len(doc) < 2:
+                continue
+
+            content = doc[0]
+            metadata = doc[1]
+
+            # reference
+            references.append({
+                "index": idx,
+                "metadata": metadata
+            })
+
+            # 拼接 RAG 上下文
+            rag_context += f"【参考资料{idx}】\n"
+            rag_context += f"{content}\n\n"
+
+        # evaluator 输入
+        evaluation_input = (
+            f"Conversation History:\n"
+            f"{conversation_history}\n\n"
+            f"User Question:\n"
+            f"{query}\n\n"
+            f"{rag_context}"
+        )
+
+        # 加载 Prompt
+        prompt_content = load_prompt('evaluate_retrieval_prompt.txt')
+        # 调用 LLM
+        response_text = RAGService.assisted_query(prompt_content, evaluation_input)
+        # JSON 解析
+        try:
+            result = json.loads(response_text)
+        except Exception:
+            return {
+                "function_type": "evaluate_retrieval",
+                "decision": "insufficient",
+                "original_data": query,
+                "current_data": [],
+                "clarification_needed": "unexpected wrong appear in json parsing"
+            }
+
+        # 提取 decision
+        decision = result.get(
+            "decision",
+            "insufficient"
+        )
+
+        # 合法 decision
+        valid_decisions = [
+            "sufficient",
+            "insufficient",
+            "irrelevant"
+        ]
+
+        if decision not in valid_decisions:
+            decision = "insufficient"
+
+        return {
+            "function_type": "evaluate_retrieval",
+            "decision": decision,
+            "original_data": query,
+            "current_data": documents,
+            "references": references,
+            "clarification_needed": result.get(
+                "clarification_needed",
+                ""
+            )
+        }
+
+    @staticmethod
+    def run(query: str, raw_history: List[MMDataItem],  max_iterations: int = 5) -> Dict[str, Any]:
         """
             运行 Agent 主流程
 
-            流程：评估查询复杂度 → 生成策略 → 迭代检索 → 决策 → 去重返回
-
-            Args:
-                query: 用户查询文本
-                kb_id: 知识库 ID
-
-            Returns:
-                包含 documents、metrics、iterations、decision_history 的字典
-        """
-        complexity = self._estimate_query_complexity(query)
-        strategy = self._generate_strategy(complexity)
-
-        state = AgentState(query=query, kb_id=kb_id, initial_top_k=10)
-        state.strategy = strategy
-        state.budget = strategy["budget"]
-
-        max_iterations = strategy["max_iterations"]
-
-        while state.iteration < max_iterations:
-            # 执行工具
-            result = self._execute_retrieval(state)
-
-            # 更新状态
-            self._update_state(state, result)
-
-            if state.used_tokens >= state.budget:
-                break
-
-            # 决策
-            decision = self._decide_next_action(state)
-            state.iteration += 1
-
-            if decision == "finish":
-                break
-
-            if decision == "expand_search":
-                state.top_k *= 2
-                continue
-
-        # Web fallback (Hybrid RAG)
-        if (
-                self.websearch_tool
-                and not self._is_sufficient(state)
-        ):
-            web_result = self.websearch_tool.run(
-                query=state.query,
-                top_k=5
-            )
-
-            web_docs = web_result.get("documents", [])[:5]
-            state.aggregated_documents.extend(web_docs)
-
-            # 如果 web 返回 metrics，让它参与状态管理
-            web_metrics = web_result.get("metrics", {})
-
-            if web_metrics:
-                state.metrics_history.append(web_metrics.copy())
-                state.final_metrics = web_metrics
-
-                # 更新 token 使用量
-                if len(state.metrics_history) >= 2:
-                    prev_total = state.metrics_history[-2].get("total_tokens", 0)
-                    curr_total = state.metrics_history[-1].get("total_tokens", 0)
-                    delta = max(curr_total - prev_total, 0)
-                else:
-                    delta = web_metrics.get("total_tokens", 0)
-
-                state.used_tokens += delta
-
-            # 标记 Web 增加数量
-            state.final_metrics["web_added"] = len(web_docs)
-
-            # 记录决策历史
-            decision_record = DecisionRecord(
-                timestamp=datetime.now().isoformat(),
-                iteration=state.iteration,
-                top_k=state.top_k,
-                doc_count=len(state.aggregated_documents),
-                selected_count=state.final_metrics.get("selected_count", 0),
-                total_tokens=state.final_metrics.get("total_tokens", 0),
-                action="web_fallback",
-                raw_response="",
-                reflection="triggered_due_to_insufficient_internal_results",
-                error=None
-            )
-
-            state.decision_history.append(decision_record)
-
-        # 去重
-        unique_docs = self._deduplicate(state.aggregated_documents)
-
-        return {
-            "documents": unique_docs,
-            "metrics": state.final_metrics,
-            "iterations": state.iteration,
-            "decision_history": state.decision_history
-        }
-
-    @staticmethod
-    def _load_prompt_template() -> str:
-        """
-            加载决策提示词模板
-
-            Returns:
-                提示词模板内容
-        """
-        prompt_path = Path("prompts/agent_decision_prompt.txt")
-        return prompt_path.read_text(encoding="utf-8")
-
-    def _call_llm(self, prompt: str) -> str:
-        """
-            调用 LLM (本项目中采用 MiniMax M2-her) 模型进行决策生成
-
-            Args:
-                prompt: 输入提示词
-
-            Returns:
-                模型生成的响应文本
-
-            Raises:
-                requests.RequestException: API 调用失败时抛出
-        """
-        url = f"{self.llm_url}/messages"
-
-        headers = {
-            "x-api-key": self.api_key,
-            "anthropic-version": "2023-06-01",
-            "Content-Type": "application/json"
-        }
-
-        payload = {
-            "model": "M2-her",
-            "max_tokens": 512,
-            "temperature": 0.1,
-            "messages": [
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": prompt
-                        }
-                    ]
-                }
-            ]
-        }
-
-        response = requests.post(url, headers=headers, json=payload)
-        response.raise_for_status()
-
-        data = response.json()
-
-        # 安全读取响应内容
-        if "content" in data and isinstance(data["content"], list):
-            texts = [
-                block.get("text", "")
-                for block in data["content"]
-                if block.get("type") == "text"
-            ]
-            return "".join(texts)
-
-        # 若结构不符合预期，则返回空字符串
-        return ""
-
-    def _execute_retrieval(self, state: AgentState) -> Dict[str, Any]:
-        """
-            执行单次检索
-
-            Args:
-                state: 当前 Agent 状态
-
-            Returns:
-                检索结果，包含 documents 和 metrics
-        """
-        return self.retrieval_tool.run(
-            query=state.query,
-            kb_id=state.kb_id,
-            top_k=state.top_k
-        )
-
-    @staticmethod
-    def _update_state(state: AgentState, result: Dict[str, Any]) -> None:
-        """
-            更新 Agent 状态
-
-            Args:
-                state: 当前 Agent 状态
-                result: 检索结果
-        """
-        documents = result.get("documents", [])
-        metrics = result.get("metrics", {})
-
-        state.aggregated_documents.extend(documents)
-        state.final_metrics = metrics
-        state.metrics_history.append(metrics.copy())
-
-        # 必须比较前后两轮的 delta
-        if len(state.metrics_history) >= 2:
-            prev_total = state.metrics_history[-2].get("total_tokens", 0)
-            curr_total = state.metrics_history[-1].get("total_tokens", 0)
-            delta = max(curr_total - prev_total, 0)
-        else:
-            delta = metrics.get("total_tokens", 0)
-
-        state.used_tokens += delta
-
-    def _has_marginal_gain(self, state: AgentState) -> bool:
-        """"
-            判断当前迭代是否仍有明显收益
-
-            比较最近两轮的 selected_count 和 total_tokens 增量
-
-            Args:
-                state: 当前 Agent 状态
-
-            Returns:
-                True 表示有边际收益，False 表示无收益
-        """
-        if len(state.metrics_history) < 2:
-            return True  # 第一轮无法比较，默认有收益
-
-        prev = state.metrics_history[-2]
-        curr = state.metrics_history[-1]
-
-        delta_selected = curr.get("selected_count", 0) - prev.get("selected_count", 0)
-        delta_tokens = curr.get("total_tokens", 0) - prev.get("total_tokens", 0)
-
-        # 可调参数
-        if delta_selected >= self.min_select_gain:
-            return True
-
-        if delta_tokens >= self.min_token_gain:
-            return True
-
-        return False
-
-    @staticmethod
-    def _estimate_query_complexity(query: str) -> Dict[str, Any]:
-        """
-            评估查询复杂度
-
-            基于查询长度、实体数量、比较词、推理词计算复杂度分数
-
-            Args:
-                query: 用户查询文本
-
-            Returns:
-                包含 level 和 score 的字典
-                    - level: simple / medium / complex
-                    - score: 复杂度分数
-        """
-        length = len(query)
-
-        multi_entity = (
-                query.count("和") +
-                query.count("与") +
-                query.lower().count("vs")
-        )
-
-        has_compare = any(
-            k in query.lower()
-            for k in ["对比", "区别", "compare", "difference"]
-        )
-
-        has_reason = any(
-            k in query.lower()
-            for k in ["为什么", "原理", "how", "why"]
-        )
-
-        score = 0
-
-        if length > 40:
-            score += 1
-        if multi_entity >= 1:
-            score += 1
-        if has_compare:
-            score += 1
-        if has_reason:
-            score += 1
-
-        if score <= 1:
-            level = "simple"
-        elif score == 2:
-            level = "medium"
-        else:
-            level = "complex"
-
-        return {
-            "level": level,
-            "score": score
-        }
-
-    @staticmethod
-    def _generate_strategy(complexity: Dict[str, Any]) -> Dict[str, Any]:
-        """
-            根据查询复杂度生成检索策略
-
-            Args:
-                complexity: 复杂度评估结果
-
-            Returns:
-                策略配置，包含 max_iterations、min_selected_docs、min_total_tokens、budget
-        """
-        level = complexity["level"]
-
-        if level == "simple":
-            return {
-                "max_iterations": 2,
-                "min_selected_docs": 2,
-                "min_total_tokens": 500,
-                "budget": 1500
-            }
-
-        elif level == "medium":
-            return {
-                "max_iterations": 3,
-                "min_selected_docs": 3,
-                "min_total_tokens": 800,
-                "budget": 2500
-            }
-
-        else:  # complex
-            return {
-                "max_iterations": 5,
-                "min_selected_docs": 5,
-                "min_total_tokens": 1200,
-                "budget": 4000
-            }
-
-    def _decide_next_action(self, state: AgentState) -> str:
-        """
-            决策下一步动作
-
             流程：
-                1. 检查边际收益，无收益则直接结束
-                2. 调用 LLM 决策（带重试机制）
-                3. 验证响应 schema
-                4. 降级处理
-                5. 自我反思防护（确保满足最低要求）
-                6. 记录决策历史
+            1. 对话历史总结（如有）
+            2. 问题重写与清晰度判断
+            3. 并行执行：知识库检索 + 联网搜索（如需要）
+            4. 检索结果评估与决策
+            5. 答案生成（融合多源信息）
+            6. 后处理与返回
 
             Args:
-                state: 当前 Agent 状态
+                query: 用户查询文本
+                raw_history: 原始对话历史
+                max_iterations: 最大迭代次数（防止死循环）
 
             Returns:
-                决策结果："finish" 或 "expand_search"
+                包含答案、参考资料、决策历史等的字典
         """
-        # 如果没有边际收益，直接停止
-        if not self._has_marginal_gain(state):
-            decision_record = DecisionRecord(
-                timestamp=datetime.now().isoformat(),
-                iteration=state.iteration,
-                top_k=state.top_k,
-                doc_count=len(state.aggregated_documents),
-                selected_count=state.final_metrics.get("selected_count", 0),
-                total_tokens=state.final_metrics.get("total_tokens", 0),
-                action="finish",
-                raw_response="",
-                reflection="stopped_due_to_no_marginal_gain",
-                error=None
-            )
+        graph = build_main_graph()
 
-            state.decision_history.append(decision_record)
-            return "finish"
+        try:
+            result = graph.invoke({
+                "query": query,
+                "raw_history": raw_history,
+                "conversation_history": "",
+                "rewritten_questions": [],
+                "clarification_needed": "",
+                "sub_results": []
+            })
 
-        # 加载提示词模板
-        prompt_template = self._load_prompt_template()
+            references = []
 
-        selected_count = state.final_metrics.get("selected_count", 0)
-        total_tokens = state.final_metrics.get("total_tokens", 0)
-        doc_count = len(state.aggregated_documents)
+            for item in result.get("sub_results", []):
+                references.extend(item.get("references", []))
 
-        prompt = prompt_template.format(
-            iteration=state.iteration,
-            top_k=state.top_k,
-            doc_count=doc_count,
-            selected_count=selected_count,
-            total_tokens=total_tokens,
-            min_selected_docs=state.strategy.get(
-                "min_selected_docs",
-                self.min_selected_docs
-            ),
-            min_total_tokens=state.strategy.get(
-                "min_total_tokens",
-                self.min_total_tokens
-            )
-        )
+            answer = "\n\n".join([
+                item.get("answer", "")
+                for item in result.get("sub_results", [])
+                if item.get("answer")
+            ])
 
-        # 重试逻辑
-        retries = 0
-        llm_action: Optional[str] = None
-        raw_response: str = ""
-        error_message: Optional[str] = None
-        used_fallback = False
+            return {
+                "success": True,
+                "answer": answer,
+                "references": references,
+                "conversation_history": result.get("conversation_history", ""),
+                "rewritten_questions": result.get("rewritten_questions", [])
+            }
 
-        while retries <= self.max_decision_retries:
-
-            try:
-                raw_response = self._call_llm(prompt)
-
-                decision_json = json.loads(raw_response)
-
-                # Schema 严格校验
-                if (
-                        isinstance(decision_json, dict)
-                        and list(decision_json.keys()) == ["action"]
-                        and decision_json["action"] in ["expand_search", "finish"]
-                ):
-                    llm_action = decision_json["action"]
-                    break
-                else:
-                    raise ValueError("Schema validation failed")
-
-            except Exception as e:
-                error_message = f"Retry {retries}: {str(e)}"
-                retries += 1
-
-                if retries > self.max_decision_retries:
-                    used_fallback = True
-                    break
-
-        # fallback 降级逻辑：LLM 决策失败时使用规则判断
-        if llm_action is None:
-            if not self._is_sufficient(state):
-                final_action = "expand_search"
-            else:
-                final_action = "finish"
-        else:
-            final_action = llm_action
-
-        # Self-reflection guardrail，自我反思防护：如果决策为结束但指标不足，强制扩展
-        reflection_note = None
-
-        if final_action == "finish" and not self._is_sufficient(state):
-            reflection_note = "override_finish_to_expand_due_to_insufficient_metrics"
-            final_action = "expand_search"
-
-        # Decision logging，记录决策历史
-        decision_record = DecisionRecord(
-            timestamp=datetime.now().isoformat(),
-            iteration=state.iteration,
-            top_k=state.top_k,
-            doc_count=doc_count,
-            selected_count=selected_count,
-            total_tokens=total_tokens,
-            action=final_action,
-            raw_response=raw_response,
-            reflection=reflection_note,
-            error=error_message if used_fallback else None
-        )
-
-        state.decision_history.append(decision_record)
-
-        return final_action
-
-    def _is_sufficient(self, state: AgentState) -> bool:
-        """
-            规则判断（兜底处理），判断当前检索结果是否满足最低要求
-
-            Args:
-                state: 当前 Agent 状态
-
-            Returns:
-                True 表示满足要求，False 表示不满足
-        """
-        metrics = state.final_metrics
-
-        selected_count = metrics.get("selected_count", 0)
-        total_tokens = metrics.get("total_tokens", 0)
-
-        min_selected_docs = state.strategy.get(
-            "min_selected_docs",
-            self.min_selected_docs
-        )
-
-        min_total_tokens = state.strategy.get(
-            "min_total_tokens",
-            self.min_total_tokens
-        )
-
-        if selected_count < min_selected_docs:
-            return False
-
-        if total_tokens < min_total_tokens:
-            return False
-
-        return True
-
-    @staticmethod
-    def _deduplicate(documents: List[Dict]) -> List[Dict]:
-        """
-            对文档列表进行去重
-
-            基于文档 content 字段进行去重
-
-            Args:
-                documents: 原始文档列表
-
-            Returns:
-                去重后的文档列表
-        """
-        seen = set()
-        unique = []
-
-        for doc in documents:
-            content = doc.get("content")
-            if content not in seen:
-                seen.add(content)
-                unique.append(doc)
-
-        return unique
+        except Exception as e:
+            return {
+                "success": False,
+                "answer": "",
+                "references": [],
+                "conversation_history": "",
+                "rewritten_questions": [],
+                "error": str(e)
+            }

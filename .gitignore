@@ -1,11 +1,11 @@
 ### model ###
-/model/
-
-### article data ###
-/article_data/
+model/
 
 ### env ###
 .env
 
-### zip ###
-*.zip
+### idea ###
+.idea/
+
+### pycache ###
+__pycache__/

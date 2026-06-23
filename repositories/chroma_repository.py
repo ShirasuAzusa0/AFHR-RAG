@@ -25,9 +25,8 @@ class ChromaRepository:
 
         # 初始化所有 collection
         if not ChromaRepository._collections:
-            for collection_name in self.config.CHROMA_COLLECTIONS.items():
-                ChromaRepository._collections[collection_name] = \
-                    self._get_or_create_collection(collection_name)
+            for kb_name, collection_name in self.config.CHROMA_COLLECTIONS.items():
+                ChromaRepository._collections[collection_name] = self._get_or_create_collection(collection_name)
 
         self.collections = ChromaRepository._collections
         logger.info(f"Collection initialized: {self.config.CHROMA_COLLECTIONS}")
