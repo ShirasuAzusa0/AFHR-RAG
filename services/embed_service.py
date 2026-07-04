@@ -171,7 +171,9 @@ class EmbeddingService:
                     metadata = {
                         "kb_id": item.kb_id,
                         "document_id": item.document_id,
-                        "collection_name": item.collection_name
+                        "collection_name": item.collection_name,
+                        "title": item.title,
+                        "parent_chain": " > ".join(item.parent_chain) if item.parent_chain else ""
                     }
 
                     ids.append(unique_id)

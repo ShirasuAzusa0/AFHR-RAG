@@ -7,6 +7,8 @@ class DataItem(BaseModel):
     """
     kb_id: int = Field(..., description="知识库ID")
     document_id: int = Field(..., description="文档ID")
+    title: str = Field(..., description="文档标题")
+    parent_chain: list[str] | None = Field(..., description="递进链")
     collection_name: str = Field(..., description="Collection 名称")
     context: str = Field(..., description="需要进行向量化的文本内容")
 

@@ -216,6 +216,8 @@ class RAGService:
                         data_item = DataItem(
                             kb_id=1,  # 目前唯一知识库
                             document_id=document_id,
+                            title=p.title  or "",
+                            parent_chain=p.parentChain,
                             collection_name=collection_name,  # 划分 collection
                             context=content
                         )
