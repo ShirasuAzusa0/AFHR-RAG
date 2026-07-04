@@ -131,3 +131,6 @@ AFHR-RAG 采用 **MainGraph + SubGraph 的双层 Agentic RAG 编排架构**。
 请求参数：query, history
 返回参数：LLM 流式输出的 answer 和 references
 ```
+
+## 主项目链接
+https://gitee.com/deanyy/rag-legal-anti-fraud-system
