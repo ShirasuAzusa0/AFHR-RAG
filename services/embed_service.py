@@ -155,13 +155,19 @@ class EmbeddingService:
             metadatas = []
             texts_to_embed = []
 
-            for item in items:
+            for idx, item in enumerate(items):
                 try:
                     # 生成稳定 hash
                     content = item.context.strip()
                     content_hash = hashlib.md5(content.encode("utf-8")).hexdigest()[:12]
 
-                    unique_id = f"{item.kb_id}_{item.document_id}_{content_hash}"
+                    unique_id = (
+                        f"{item.collection_name}_"
+                        f"{item.kb_id}_"
+                        f"{item.document_id}_"
+                        f"{idx}_"
+                        f"{content_hash}"
+                    )
                     metadata = {
                         "kb_id": item.kb_id,
                         "document_id": item.document_id,
@@ -188,13 +194,20 @@ class EmbeddingService:
 
             try:
                 embeddings = self._batch_embed(texts_to_embed)
-                self.chroma_repo.add_vectors(
-                    collection_name=collection_name,
-                    ids=ids,
-                    embeddings=embeddings,
-                    metadatas=metadatas,
-                    documents=documents
-                )
+                UPSERT_BATCH_SIZE = 5000
+
+                for start in range(
+                        0,
+                        len(ids),
+                        UPSERT_BATCH_SIZE
+                ):
+                    self.chroma_repo.add_vectors(
+                        collection_name=collection_name,
+                        ids=ids,
+                        embeddings=embeddings,
+                        metadatas=metadatas,
+                        documents=documents
+                    )
                 total_success += len(ids)
             except Exception as e:
                 logger.error(f"Processing failed: {str(e)}")

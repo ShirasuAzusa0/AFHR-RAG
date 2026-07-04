@@ -1,7 +1,6 @@
 import json
 import logging
-import operator
-from typing import Dict, Any, List, TypedDict, Annotated
+from typing import Dict, Any, List
 from models.message_model import MMDataItem
 from graph.main_graph import build_main_graph
 from services.rag_service import RAGService
@@ -12,23 +11,9 @@ from langgraph.types import Send
 
 logger = logging.getLogger(__name__)
 
-class AgentState(TypedDict):
-    query: str                                      # 用户原始提问输入
-    conversation_history: str                       # 总结后的历史消息
-    rewritten_questions: list[str]                  # 对 query 重写后的子问题
-    clarification_needed: str                       # 对用户下一步要求
-    sub_results: Annotated[list, operator.add]
-
-class SubGraphState(TypedDict):
-    subquestion: str
-    conversation_history: str
-    iteration: int
-    rag_result: dict
-    references: list
-
 class AgentService:
     @staticmethod
-    def _summarize_history(raw_history: List[MMDataItem]) -> Dict[str, Any]:
+    def summarize_history(raw_history: List[MMDataItem]) -> Dict[str, Any]:
         """
             对用户历史对话进行总结，生成 conversation_history
             :param raw_history: 用户模型聊天历史记录
@@ -54,8 +39,8 @@ class AgentService:
         # 构造对话文本
         conversation = "Conversation history:\n"
         for msg in relevant_msgs:
-            role = "User" if msg.role.lower() == "User" else "Assistant"
-            conversation += f"{role}: {msg.text}\n"
+            role = "User" if msg.role.lower() == "user" else "Assistant"
+            conversation += f"{role}: {msg.content}\n"
 
         # 载入 prompt
         prompt_content = load_prompt('llm_summary_prompt.txt')
@@ -115,7 +100,7 @@ class AgentService:
                 "function_type": "rewrite_query",
                 "is_clear": True,
                 "original_data": query,
-                "rewritten_data": questions,
+                "rewritten_questions": questions,
                 "clarification_needed": ""
             }
 
@@ -127,7 +112,7 @@ class AgentService:
             "function_type": "rewrite_query",
             "is_clear": False,
             "original_data": query,
-            "rewritten_data": [],
+            "rewritten_questions": [],
             "clarification_needed": clarification_needed
         }
 
@@ -153,7 +138,6 @@ class AgentService:
                 "agent_subgraph",
                 {
                     "subquestion": question,
-                    "original_query": state.get("original_query", ""),
                     "conversation_history": state.get("conversation_history", "")
                 }
             )
@@ -184,6 +168,13 @@ class AgentService:
                 }
 
             kb_name = result.get("kb_collection", "")
+            
+            # 确保 kb_name 是字符串
+            if isinstance(kb_name, list):
+                kb_name = kb_name[0] if kb_name else ""
+            elif not isinstance(kb_name, str):
+                kb_name = str(kb_name)
+                
             if kb_name:
                 kb_id = kb_name2id(kb_name)
                 if kb_id > 0:
@@ -216,14 +207,20 @@ class AgentService:
         """
             向量库检索
         """
-        return RAGService.query_search(query_text, kb_id, top_k)
+        # 默认使用知识库1（法律知识库）
+        if kb_id is None:
+            kb_id = 1
+            
+        rag_service = RAGService.get_instance()
+        return rag_service.query_search(query_text, kb_id, top_k)
 
     @staticmethod
     def web_search(query_text, history):
         """
             联网搜索
         """
-        return call_agent_search(query_text, history)
+        answer, references = call_agent_search(query_text, history)
+        return answer, references
 
     @staticmethod
     def evaluate_retrieval(query: str, search_result: dict, conversation_history: str):
@@ -262,20 +259,47 @@ class AgentService:
                     distance,
                     rerank_score
                 )
+                或者是字典格式：{"content": "...", "metadata": {...}}
             """
             # 安全处理
-            if not isinstance(doc, (list, tuple)):
-                continue
-            if len(doc) < 2:
+            distance = None
+            rerank_score = None
+
+            if isinstance(doc, (list, tuple)):
+                if len(doc) < 2:
+                    continue
+                content = doc[0]
+                metadata = doc[1]
+                if len(doc) >= 3:
+                    distance = doc[2]
+                if len(doc) >= 4:
+                    rerank_score = doc[3]
+            elif isinstance(doc, dict):
+                content = doc.get("content", "")
+                metadata = doc.get("metadata", {})
+                distance = doc.get("distance")
+                rerank_score = doc.get("rerank_score")
+            else:
                 continue
 
-            content = doc[0]
-            metadata = doc[1]
+            # 确保 content 是字符串
+            if isinstance(content, list):
+                content = "".join(str(c) for c in content)
+            elif not isinstance(content, str):
+                content = str(content)
+
+            # 跳过空内容
+            if not content:
+                continue
 
             # reference
             references.append({
                 "index": idx,
-                "metadata": metadata
+                "content": content,
+                "metadata": metadata,
+                "document_id": metadata.get("document_id"),
+                "distance": distance,
+                "rerank_score": rerank_score
             })
 
             # 拼接 RAG 上下文
@@ -336,7 +360,82 @@ class AgentService:
         }
 
     @staticmethod
-    def run(query: str, raw_history: List[MMDataItem],  max_iterations: int = 5) -> Dict[str, Any]:
+    def generate_final_answer(query: str, sub_results: list, conversation_history: str = "", stream_callback=None) -> dict:
+        """
+            基于多个子问题结果生成最终回答
+        """
+        contexts = []
+        references = []
+
+        for item in sub_results:
+
+            rag = item.get("rag_result", {})
+
+            documents = rag.get("documents", [])
+
+            for doc in documents:
+
+                # 处理元组格式：(content, metadata, distance, score)
+                if isinstance(doc, (list, tuple)):
+                    content = doc[0] if len(doc) > 0 else ""
+                # 处理字典格式：{"content": "..."}
+                elif isinstance(doc, dict):
+                    content = doc.get("content", "")
+                else:
+                    continue
+                
+                # 确保 content 是字符串
+                if isinstance(content, list):
+                    content = "".join(str(c) for c in content)
+                elif not isinstance(content, str):
+                    content = str(content)
+
+                if content:
+                    contexts.append(content)
+
+            references.extend(item.get("references", []))
+
+        if not contexts:
+            prompt_content = load_prompt("generate_answer_prompt.txt")
+            # 一次性返回
+            # answer = RAGService.assisted_query(prompt_content,f"User Question:\n{query}")
+            # 流式返回
+            answer = ""
+
+            for token in RAGService.assisted_query_stream(prompt_content,f"User Question:\n{query}"):
+                stream_callback(token)
+
+            return {
+                "answer": answer or "",
+                "references": []
+            }
+
+        final_context = "\n\n".join(contexts)
+
+        prompt_content = load_prompt("generate_answer_prompt.txt")
+
+        llm_input = (
+            f"Conversation History:\n"
+            f"{conversation_history}\n\n"
+            f"User Question:\n"
+            f"{query}\n\n"
+            f"Reference Materials:\n"
+            f"{final_context}"
+        )
+
+        # answer = RAGService.assisted_query_stream(prompt_content, llm_input)
+        for token in RAGService.assisted_query_stream(prompt_content, llm_input):
+            if stream_callback:
+                stream_callback(token)
+
+        return {
+            # "answer": answer or "",
+            "answer": "",
+            "references": references
+        }
+
+    @staticmethod
+    def run(query: str, raw_history: List[MMDataItem], stream_callback=None) -> Dict[str, Any]:
         """
             运行 Agent 主流程
 
@@ -351,7 +450,7 @@ class AgentService:
             Args:
                 query: 用户查询文本
                 raw_history: 原始对话历史
-                max_iterations: 最大迭代次数（防止死循环）
+                stream_callback: 最终回答生成过程中的流式回调函数，默认为 None
 
             Returns:
                 包含答案、参考资料、决策历史等的字典
@@ -365,24 +464,14 @@ class AgentService:
                 "conversation_history": "",
                 "rewritten_questions": [],
                 "clarification_needed": "",
-                "sub_results": []
+                "sub_results": [],
+                "stream_callback": stream_callback
             })
-
-            references = []
-
-            for item in result.get("sub_results", []):
-                references.extend(item.get("references", []))
-
-            answer = "\n\n".join([
-                item.get("answer", "")
-                for item in result.get("sub_results", [])
-                if item.get("answer")
-            ])
 
             return {
                 "success": True,
-                "answer": answer,
-                "references": references,
+                "answer": result.get("answer", ""),
+                "references": result.get("references", []),
                 "conversation_history": result.get("conversation_history", ""),
                 "rewritten_questions": result.get("rewritten_questions", [])
             }

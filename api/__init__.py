@@ -5,6 +5,7 @@ from flask_cors import CORS
 import logging
 
 from repositories.chroma_repository import ChromaRepository
+from services.agent_service import AgentService
 from services.rag_service import RAGService
 from services.embed_service import EmbeddingService
 from services.rerank_service import RerankerService
@@ -68,8 +69,11 @@ def create_app():
 
     app.rag_service = rag_service
 
+    agent_service = AgentService()
+    app.agent_service = agent_service
+
     # 注册路由
-    rag_bp = create_rag_routes(rag_service)
+    rag_bp = create_rag_routes(agent_service)
     app.register_blueprint(rag_bp)
 
     @app.route("/")

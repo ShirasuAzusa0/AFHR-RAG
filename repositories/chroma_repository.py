@@ -13,7 +13,7 @@ class ChromaRepository:
 
     def __init__(self):
         """
-        初始化 Chroma 仓库，加载配置，创建或复用 Client 与 Collections
+            初始化 Chroma 仓库，加载配置，创建或复用 Client 与 Collections
         """
         self.config = ChromaConfig()
 
@@ -112,12 +112,25 @@ class ChromaRepository:
         """
         collection = self._get_collection(collection_name)
 
-        collection.upsert(
-            ids=ids,
-            embeddings=embeddings,
-            metadatas=metadatas,
-            documents=documents
-        )
+        batch_size = 5000
+
+        for start in range(0, len(ids), batch_size):
+            end = min(
+                start + batch_size,
+                len(ids)
+            )
+
+            collection.upsert(
+                ids=ids[start:end],
+                embeddings=embeddings[start:end],
+                metadatas=metadatas[start:end],
+                documents=documents[start:end]
+            )
+
+            logger.info(
+                f"[{collection_name}] "
+                f"{end}/{len(ids)} inserted"
+            )
 
     def delete_all_in_collection(self, collection_name: str):
         """

@@ -5,12 +5,20 @@ import os
 from typing import List
 
 from models.embed_model import DataItem
-from services.chunking_service import document_auto_split
+from services.chunking_service import document_auto_split, get_document_type
 
 
 class RAGService:
     # 保存唯一实例
     _instance = None
+
+    @classmethod
+    def get_instance(cls):
+        if cls._instance is None:
+            raise RuntimeError('RAGService not initialized')
+        if not isinstance(cls._instance, RAGService):
+            raise RuntimeError(f'RAGService._instance is not a RAGService instance: {type(cls._instance)}')
+        return cls._instance
 
     def __init__(
             self,
@@ -36,6 +44,12 @@ class RAGService:
         self.folder_to_collection = json.loads(os.getenv('CHROMA_COLLECTIONS', '{}')) if os.getenv('CHROMA_COLLECTIONS', '{}') else {}
 
         RAGService._instance = self
+        
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.info(f"RAGService initialized: {self}")
+        logger.info(f"RAGService._instance type: {type(RAGService._instance)}")
+        logger.info(f"embedding_service type: {type(self.embedding_service)}")
 
     def query_search(self, query_text, kb_id, top_k=10):
         """
@@ -54,15 +68,26 @@ class RAGService:
                     - metrics: 筛选统计信息（threshold、selected_count、total_tokens）
         """
         # step1 查询向量化
-        global metas, distances, docs
         query_embedding = self.embedding_service.embed_texts([query_text])[0]
 
         # step2 向量检索召回
+        kb_id_to_collection = {
+            1: "legal_kb_vectors",
+            2: "anti_fraud_kb_vectors",
+            3: "health_rumor_busting_kb_vectors"
+        }
+        collection_name = kb_id_to_collection.get(kb_id, "legal_kb_vectors")
         results = self.chroma_repo.query(
+            collection_name=collection_name,
             query_embedding=query_embedding,
             kb_id=kb_id,
             top_k=top_k
         )
+        
+        docs = []
+        metas = []
+        distances = []
+        
         if isinstance(results, list):
             # 提取各个字段
             docs = [item.get('content', '') for item in results]
@@ -85,12 +110,35 @@ class RAGService:
         }
 
     @classmethod
+    def assisted_query_stream(cls, prompt: str, conversation: str):
+        instance = cls.get_instance()
+        yield from instance._assisted_query_stream(prompt, conversation)
+
+    def _assisted_query_stream(self, prompt, conversation):
+        response = self.llm_client.chat.completions.create(
+            model=os.getenv("LLM_OPENAI_MODEL_NAME", "MiniMax-Text-01"),
+            messages=[
+                {
+                    "role": "system",
+                    "content": prompt
+                },
+                {
+                    "role": "user",
+                    "content": conversation
+                }
+            ],
+            temperature=0.2,
+            stream=True  # ← 唯一新增
+        )
+        for chunk in response:
+            delta = chunk.choices[0].delta.content
+            if delta:
+                yield delta
+
+    @classmethod
     def assisted_query(cls, prompt: str, conversation: str) -> str:
-        if RAGService._instance is None:
-            raise RuntimeError('RAG service is not initialized')
-        # 艾斯比 pycharm 连类内调用 protected 也能给我警告上了（绷
-        # noinspection PyProtectedMember
-        return cls._instance._assisted_query(prompt, conversation)
+        instance = cls.get_instance()
+        return instance._assisted_query(prompt, conversation)
 
     def _assisted_query(self, prompt: str, conversation: str):
         response = self.llm_client.chat.completions.create(
@@ -150,6 +198,10 @@ class RAGService:
 
             for root, _, files in os.walk(folder_path):
                 for file in files:
+                    if get_document_type(file) != "md":
+                        print(f"跳过非 md 文件：{file}")
+                        continue
+
                     file_path = os.path.join(root, file)
 
                     paragraphs = document_auto_split(file_path)

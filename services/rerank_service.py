@@ -166,6 +166,13 @@ class RerankerService:
                     - selected_documents: 格式同输入的文档列表
                     - metrics: 包含 threshold、selected_count、total_tokens
         """
+        if not reranked_results:
+            return [], {
+                "threshold": 0.0,
+                "selected_count": 0,
+                "total_tokens": 0
+            }
+
         scores = [r[3] for r in reranked_results]
         scores_array = np.array(scores)
 
@@ -201,7 +208,12 @@ class RerankerService:
         metrics = {
             "threshold": float(threshold),
             "selected_count": len(selected),
-            "total_tokens": total_tokens
+            "candidate_count": len(candidates),
+            "rerank_count": len(reranked_results),
+            "total_tokens": total_tokens,
+            "max_rerank_score": float(max(scores)),
+            "min_rerank_score": float(min(scores)),
+            "avg_rerank_score": float(np.mean(scores))
         }
 
         return selected, metrics

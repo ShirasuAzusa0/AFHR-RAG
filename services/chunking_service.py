@@ -2,6 +2,7 @@ import re
 import os
 from dataclasses import dataclass
 from typing import List, Optional
+from docx import Document
 
 @dataclass
 class ChunkingRule:
@@ -222,6 +223,20 @@ def recursive_split(
     current_rule = rule_sequence[index]
     segments = split_by_rule(content, current_rule)
 
+    if not segments:
+        full_path = parent_chain.copy()
+
+        if current_title:
+            full_path.append(current_title)
+
+        return [
+            ParagraphInfo(
+                content,
+                current_title,
+                full_path
+            )
+        ]
+
     if len(segments) <= 1 and segments[0].titleFromRule is None:
         return recursive_split(content, rule_sequence, index + 1, current_title, parent_chain)
 
@@ -325,11 +340,37 @@ def document_auto_split(file_path: str) -> List[ParagraphInfo]:
         Returns:
             分段信息列表
     """
-    with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
+    content = None
+    doc_type = get_document_type(os.path.basename(file_path))
+
+    if doc_type == "docx":
+        try:
+            doc = Document(file_path)
+
+            content = "\n".join(
+                p.text.strip()
+                for p in doc.paragraphs
+                if p.text.strip()
+            )
+
+        except Exception as e:
+            raise ValueError(f"无法解析 DOCX 文件：{file_path}\n{e}")
+
+    else:
+        for encoding in ("utf-8", "utf-8-sig", "gb18030", "gbk"):
+            try:
+                with open(file_path, 'r', encoding=encoding) as f:
+                    content = f.read()
+                break
+            except UnicodeDecodeError:
+                continue
+
+    if content is None:
+        raise UnicodeDecodeError("unknown", b"", 0, 1, f"无法解析文件编码：{file_path}")
 
     doc_type = get_document_type(os.path.basename(file_path))
     rule_list = get_chunking_rules()
     rule_sequence = build_rule_sequence(doc_type, content, rule_list)
     paragraphs = recursive_split(content, rule_sequence, 0, None, [])
+
     return post_process_paragraphs(paragraphs)
